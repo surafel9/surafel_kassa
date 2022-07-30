@@ -47,6 +47,8 @@
             height: 100%;
         }
 
+
+
         .header,
         .contact {
             background-color: #3b3a3a;
@@ -81,7 +83,7 @@
         }
 
         .socialIcon:nth-child(odd) {
-            color: red;
+
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -107,7 +109,7 @@
 
         .courses li {
             list-style-type: none;
-            color: red;
+            color: #000;
         }
 
         .courses li::before,
@@ -157,6 +159,16 @@
         .work-experiance li::before {
             content: '●';
             margin: 0 5px;
+        }
+
+        @media screen and (max-width:600px) {
+
+            .body-wraper {
+                flex-direction: column;
+                border: medium;
+                overflow-x: hidden;
+                width: auto;
+            }
         }
     </style>
 </head>
